@@ -14,3 +14,8 @@ Give it exec permitions and exec it manualy.
   chmod +x update.sh
   ./update.sh
  ```
+ Maiby you want to execute it automaticly.
+```bash
+  chmod +x update.sh
+  cp --mkdir update.sh $HOME/.config/hypr/scripts
+```
