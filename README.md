@@ -9,6 +9,7 @@ This is an update script for Arch. I made it only for personal use and learning 
 ## How to use it:
 
 Give it exec permitions and exec it manualy.
+
   chmod +x update.sh
   ./update.sh
  
