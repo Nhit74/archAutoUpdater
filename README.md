@@ -21,5 +21,5 @@ Give it exec permitions and exec it manualy.
 ```
 Then in your hyprland.lua hyprland.autostart add the next order.
 ```lua
- hl.exec_cmd("bash /home/Nhit_74/.config/hypr/scripts/update.sh")
+ hl.exec_cmd("bash $HOME/.config/hypr/scripts/update.sh")
  ```
