@@ -1,4 +1,5 @@
 #!/bin/bash
+terminal=#put your terminal emulator here. kitty in my case.
 clear
 echo "######################################################"
 echo "#################### update.sh #######################"
@@ -13,10 +14,9 @@ then
   echo "Today's date:      " $Tdate
   if [ "$Ldate" = "$Tdate" ]
   then
-    echo "Ja has actualitzat avui"
+    echo "System is already up to date."
   else
-    echo "La data no coincideix actualitzant el sistema."
-    kitty zsh -c "echo Last update $Ldate && echo Date $Tdate && sudo pacman -Syu; exec zsh"
+    $terminal zsh -c "echo Last update $Ldate && echo Date $Tdate && sudo pacman -Syu; exec zsh"
     date +%Y-%m-%d > "$Fdate"
   fi
 else
