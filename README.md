@@ -14,8 +14,12 @@ Give it exec permitions and exec it manualy.
   chmod +x update.sh
   ./update.sh
  ```
- Maiby you want to execute it automaticly.
+ Maiby you want to execute it automaticly. The metod depends on your desktop enviroment. In my case hyprland.
 ```bash
   chmod +x update.sh
   cp --mkdir update.sh $HOME/.config/hypr/scripts
 ```
+Then in your hyprland.lua hyprland.autostart add the next order.
+```lua
+ hl.exec_cmd("bash /home/Nhit_74/.config/hypr/scripts/update.sh")
+ ```
