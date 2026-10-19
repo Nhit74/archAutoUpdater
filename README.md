@@ -19,7 +19,7 @@ Give it exec permitions and exec it manualy.
   chmod +x update.sh
   cp --mkdir update.sh $HOME/.config/hypr/scripts
 ```
-Then in your hyprland.lua hyprland.autostart add the next order.
+Then in your hyprland.lua hyprland.autostart add the order bellow.
 ```lua
  hl.exec_cmd("bash $HOME/.config/hypr/scripts/update.sh")
  ```
